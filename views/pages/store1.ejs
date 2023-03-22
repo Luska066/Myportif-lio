@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/stylePartials/headerStyle.css" type="text/css">
+    <link rel="stylesheet" href="/stylePartials/footerStyle.css" type="text/css">
+    <link rel="stylesheet" href="/stylesPageStore/stylePageStore.css" type="text/css">
+</head>
+<body>
+    <%- include('../partials/header/header.ejs') %>
+    
+    <section class="containerStore">
+        <div class="text">
+            <h1>My Projects in GitHub</h1>
+        </div>
+
+    
+        <% qualitys.forEach(function (quality) { %>
+           
+     
+        <div class="item">
+            <article class="projeto">
+                
+    
+                    <img src="https://www.handtalk.me/br/wp-content/uploads/sites/8/2018/11/capa-blog-2.png" alt="" srcset="" class="imageProjeto">
+                
+                
+            </article>
+
+            <article class="description">
+                <header class="title">
+                    <%= quality.title %>
+                 </header>
+                <div class="project_description">
+                    <p>
+                       <%= quality.Message%>
+                    </p>
+                </div>
+                <a href="<%=link%>" target="__blank">Visualizar Projeto</a>
+            </article>
+        </div>
+   
+        <% }); %>
+       
+    </section>
+
+    <%- include('../partials/footer/footer.ejs')%>
+</body>
+</html>

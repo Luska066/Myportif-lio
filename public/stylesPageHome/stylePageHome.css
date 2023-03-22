@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Sono:wght@300&display=swap');
+
+.containerStore{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/backgroudimage2.jpg");
+
+}
+
+
+
+
+.image{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+
+}
+
+.cab>h1{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+    margin-top: 20%;
+    margin-bottom: 30px;
+}
+
+.cab>p{
+    color: white;
+    font-family: 'Sono', sans-serif;
+    font-size: 20px;
+}
+
+.cab{
+    width: 700px;
+    height: 600px;
+
+    padding: 20px;
+    row-gap: 30px;
+}
+
+.images{
+    display: flex;
+    margin-top: 50px ;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.images>img{
+    object-fit: contain;
+    width: 100%;
+    padding-bottom: 30%;
+}
+
+@media (max-width:500px){
+    .images>img{
+        width: 100%;
+    }
+
+    .containerStore{
+        height: 1200px;
+    }
+}
+
+
+
+

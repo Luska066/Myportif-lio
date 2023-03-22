@@ -1,0 +1,98 @@
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.containerStore{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-image: center;
+    background-image: url("../assets/backgroudimage2.jpg");
+   
+}
+
+
+
+.item{
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(62, 62, 62);
+    transition: all .6s;
+
+   
+}
+.item:hover{
+    box-shadow: 2px 2px 8px black;
+    transform: scale(1.05,1.05);
+}
+
+.projeto>.title{
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+
+}
+
+.projeto>img{
+    border-radius: 8px;
+    border: 14px ;
+    border-style:groove;
+    border-color: white;
+    margin: 20px;
+    width: 90%;
+}
+
+.projeto{
+    height: 100%;
+
+}
+
+.project_description{
+
+    color: rgb(255, 255, 255);
+
+}
+
+.project_description>p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-align: left;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.text{
+    margin: 20px ;
+    width: 100%;
+}
+
+.text>h1{
+    margin: 20px ;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+
+    color: rgb(255, 255, 255);
+}
+
+
